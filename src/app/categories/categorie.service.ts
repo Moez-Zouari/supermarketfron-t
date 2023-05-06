@@ -9,7 +9,7 @@ export class Categorieservice {
   constructor(private http: HttpClient) {}
 
   get() {
-    return this.http.get<Categorie[]>('http://localhost:8080/category');
+    return this.http.get<Categorie[]>('http://localhost:8080/Category');
   }
   create(payload: Categorie) {
     return this.http.post<Categorie>('http://localhost:8080/Category', payload);

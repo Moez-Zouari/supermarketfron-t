@@ -15,8 +15,9 @@ export class CreateComponent {
   articleForm: Article = {
     id: 0,
     name: '',
+    description: '',
+    tax: 0,
     price: 0,
-    quantity: 0,
     category: {
       id: 0,
       name: '',

@@ -9,19 +9,19 @@ export class ArticleService {
   constructor(private http: HttpClient) {}
 
   get() {
-    return this.http.get<Article[]>('http://localhost:8080/article');
+    return this.http.get<Article[]>('http://localhost:8080/Article');
   }
   create(payload: Article) {
-    return this.http.post<Article>('http://localhost:8080/article', payload);
+    return this.http.post<Article>('http://localhost:8080/Article', payload);
   }
 
   getById(id: number) {
-    return this.http.get<Article>(`http://localhost:8080/article/${id}`);
+    return this.http.get<Article>(`http://localhost:8080/Article/${id}`);
   }
   update(payload: Article) {
-    return this.http.put(`http://localhost:8080/article`, payload);
+    return this.http.put(`http://localhost:8080/Article`, payload);
   }
   delete(id: number) {
-    return this.http.delete<Article>(`http://localhost:8080/article/${id}`);
+    return this.http.delete<Article>(`http://localhost:8080/Article/${id}`);
   }
 }
