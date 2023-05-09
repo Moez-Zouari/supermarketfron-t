@@ -11,6 +11,11 @@ const routes: Routes = [
     path: 'categories',
     redirectTo: 'categories/home',
   },
+  {
+    path: '',
+    redirectTo: 'commande/home',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({

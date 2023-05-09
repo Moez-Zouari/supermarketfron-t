@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriesModule } from './categories/categories.module';
 import { ArticlesModule } from './articles/articles.module';
+import { CommandeModule } from './commande/commande.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { ArticlesModule } from './articles/articles.module';
     AppRoutingModule,
     ArticlesModule,
     CategoriesModule,
+    CommandeModule,
     HttpClientModule,
   ],
   providers: [],
